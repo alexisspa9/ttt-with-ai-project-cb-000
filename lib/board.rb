@@ -18,7 +18,7 @@ class Board
   end
 
   def position(input)
-    cells[input.to_i-1]
+    @cells[input.to_i-1]
   end
   def full?
       @cells.all?{|c| c == "X" || c == "O"}
