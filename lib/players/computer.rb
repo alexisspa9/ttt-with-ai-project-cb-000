@@ -1,5 +1,5 @@
 module Players
-  class Human < Player
+  class COmputer < Player
 
     def move(board)
       puts "Please enter your move 1-9:"
