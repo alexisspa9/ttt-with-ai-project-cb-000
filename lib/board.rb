@@ -30,7 +30,7 @@ class Board
     !(position(input) == " " || position(input) == "")
   end
   def valid_move?(n)
-    n.to_i.between?(1,9) && !taken?(input)
+    n.to_i.between?(1,9) && !taken?(n)
   end
   def update
 
