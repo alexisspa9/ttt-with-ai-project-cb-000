@@ -27,7 +27,7 @@ class Board
     @cells.count{|c| c == "X" || c == "O"}
   end
   def taken?(n)
-    !(position(input) == " " || position(input) == "")
+    !(position(n) == " " || position(n) == "")
   end
   def valid_move?(n)
     n.to_i.between?(1,9) && !taken?(n)
