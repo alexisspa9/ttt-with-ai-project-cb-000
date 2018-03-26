@@ -24,7 +24,7 @@ class Board
       @cells.all?{|c| c == "X" || c == "O"}
   end
   def turn_count
-
+    @cells.count{|token| token == "X" || token == "O"}
 
   end
   def taken?(n)
