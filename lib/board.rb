@@ -18,7 +18,7 @@ class Board
   end
 
   def position(input)
-
+    input - 1
   end
 
 end
