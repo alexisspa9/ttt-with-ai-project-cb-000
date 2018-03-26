@@ -24,10 +24,13 @@ class Board
       @cells.all?{|c| c == "X" || c == "O"}
   end
   def turn_count
-    
+
 
   end
   def taken?
+
+  end
+  def valid_move?
     
   end
 
