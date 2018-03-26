@@ -13,33 +13,33 @@ class Game
 
   end
   def player_1
-    
+
   end
   def player_2
-    
+
   end
   def initialize(player_1, player_2)
-    
+
   end
   def current_player
-    
+
   end
   def over?
-    
+
   end
   def won?
-    
+
   end
   def draw?
-    
+
   end
   def winner
-    
+
   end
   def turn
-    
+
   end
   def play
-    
+
   end
 end
