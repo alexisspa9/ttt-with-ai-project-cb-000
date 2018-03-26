@@ -25,7 +25,6 @@ class Board
   end
   def turn_count
     @cells.count{|c| c == "X" || c == "O"}
-
   end
   def taken?(n)
     !(position(input) == " " || position(input) == "")
