@@ -21,8 +21,7 @@ class Board
     cells[input.to_i-1]
   end
   def full?
-    @cells.each {|c| c === " "} || @cells.each {|c| c === ""}
-
-  end
+      @cells.all?{|c| c == "X" || c == "O"}
+    end
 
 end
