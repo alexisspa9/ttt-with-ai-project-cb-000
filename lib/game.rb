@@ -33,10 +33,24 @@ class Game
     @board.full? && !won?
   end
   def winner
-
+    if winning_combo = won?
+      @winner = @board.cells[winning_combo.first]
+    end
   end
-  def turn
 
+  def turn
+    player = current_player
+    current_move = player.move(@board)
+    if !@board.valid_move?(current_move)
+      turn
+    else
+      puts "Turn: #{@board.turn_count+1}\n"
+      @board.display
+      @board.update(current_move, player)
+      puts "#{player.token} moved #{current_move}"
+      @board.display
+      puts "\n\n"
+    end
   end
   def play
     while !over?
