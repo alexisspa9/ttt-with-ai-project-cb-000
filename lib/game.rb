@@ -20,7 +20,7 @@ class Game
     @board.turn_count % 2 == 0 ? @player_1 : @player_2
   end
   def over?
-
+    won? || draw?
   end
   def won?
     WIN_COMBINATIONS.detect do |combo|
