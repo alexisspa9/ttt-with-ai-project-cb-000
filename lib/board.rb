@@ -29,7 +29,8 @@ class Board
   def taken?(n)
     !(position(input) == " " || position(input) == "")
   end
-  def valid_move?
+  def valid_move?(n)
+    !taken?(n)
 
   end
   def update
