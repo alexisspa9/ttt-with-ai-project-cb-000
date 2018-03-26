@@ -23,5 +23,9 @@ class Board
   def full?
       @cells.all?{|c| c == "X" || c == "O"}
   end
+  def turn_count
+    
+    
+  end
 
 end
