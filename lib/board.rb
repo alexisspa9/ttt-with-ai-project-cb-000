@@ -22,6 +22,6 @@ class Board
   end
   def full?
       @cells.all?{|c| c == "X" || c == "O"}
-    end
+  end
 
 end
