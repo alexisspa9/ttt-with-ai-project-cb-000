@@ -21,6 +21,7 @@ class Board
     cells[input.to_i-1]
   end
   def full?
+    @cells.each {|c| c === " "}
 
   end
 
