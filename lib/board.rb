@@ -28,7 +28,7 @@ class Board
 
   end
   def taken?(n)
-    @cells[n.to_i].include?("X") || @cells[n.to_i].include?("O")
+    !(position(input) == " " || position(input) == "")
   end
   def valid_move?
 
