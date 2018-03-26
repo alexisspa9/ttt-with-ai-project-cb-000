@@ -33,7 +33,7 @@ class Board
     n.to_i.between?(1,9) && !taken?(n)
   end
   def update(n, player)
-
+    @cells[n.to_i] = player.token
   end
 
 end
