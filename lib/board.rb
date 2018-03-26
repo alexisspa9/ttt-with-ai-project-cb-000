@@ -32,7 +32,7 @@ class Board
   def valid_move?(n)
     n.to_i.between?(1,9) && !taken?(n)
   end
-  def update
+  def update(n, player)
 
   end
 
