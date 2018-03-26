@@ -28,7 +28,7 @@ class Board
 
   end
   def taken?(n)
-    @cells[n].include?("X") || @cells[n].include?("O")
+    @cells[n.to_i].include?("X") || @cells[n].include?("O")
   end
   def valid_move?
 
